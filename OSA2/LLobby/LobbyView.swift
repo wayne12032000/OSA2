@@ -16,12 +16,12 @@ struct LobbyView:View {
                             ZStack{
                                 VStack{
                                     ZStack{
-                                        Image("Dino5")
+                                        Image("\(task.id)")
                                             .resizable()
                                             .aspectRatio(contentMode: .fill)
                                             .frame(height: 80)
                                             .clipped()
-                                        Image("Dino6")
+                                        Image("\(task.id)")
                                             .resizable()
                                             .aspectRatio(contentMode: .fit)
                                             .frame(height: 80)
@@ -33,7 +33,7 @@ struct LobbyView:View {
                                         Button{
                                             
                                         }label: {
-                                            Text("Detail")
+                                            Text("查看內容")
                                                 .padding(.vertical,4)
                                                 .padding(.horizontal)
                                                 .overlay{
@@ -50,7 +50,7 @@ struct LobbyView:View {
                                         .frame(maxWidth: .infinity,alignment: .leading)
                                         .padding(.leading)
                                         
-                                        Text("10 minutes")
+                                        Text(dataManager.secondsToMinutesAndSeconds(seconds: task.totalTime))
                                             .frame(maxWidth: .infinity,alignment: .leading)
                                             .padding([.leading,.bottom])
                                     }
@@ -70,10 +70,6 @@ struct LobbyView:View {
                                 
                             }
                             .listRowSeparator(.hidden)
-                        }
-                        .onDelete { indexSet in
-                            dataManager.tasks.remove(atOffsets: (indexSet))
-                            //                dataManager.saveData()
                         }
                         .onAppear{
                             dataManager.isbarshow = true

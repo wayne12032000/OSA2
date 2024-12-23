@@ -10,7 +10,9 @@ struct PreVideoView: View {
             let taskid = currentTask.id
             
             VideoPlayerView(taskManager:taskManager, taskid:taskid)
-
+            
+        
+        
             
 //        }
     }

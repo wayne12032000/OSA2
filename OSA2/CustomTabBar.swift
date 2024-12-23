@@ -8,38 +8,45 @@
 
 import SwiftUI
 
-enum Tab: String, CaseIterable {
-    case book
-    case heart
-    case person
-}
+//enum Tab: String, CaseIterable {
+////    case book
+//    case heart
+//    case person
+//}
+enum Tab: CaseIterable {
+    case lessons
+    case settings
 
-struct CustomTabBar: View {
-    @Binding var selectedTab: Tab
-    private var fillImage: String {
-        selectedTab.rawValue + ".fill"
-    }
-    private var tabColor: Color {
-        switch selectedTab {
-            case .book:
-                return .blue
-            case .heart:
-                return .purple
-            case .person:
-                return .orange
+    var displayText: String {
+        switch self {
+        case .lessons:
+            return "課程"
+        case .settings:
+            return "設定"
         }
     }
-    
-    
+
+    var tabColor: Color {
+        switch self {
+        case .lessons:
+            return .purple
+        case .settings:
+            return .orange
+        }
+    }
+}
+struct CustomTabBar: View {
+    @Binding var selectedTab: Tab
+
     var body: some View {
         VStack {
             HStack {
-                ForEach(Tab.allCases, id: \.rawValue) { tab in
+                ForEach(Tab.allCases, id: \.self) { tab in
                     Spacer()
-                    Image(systemName: selectedTab == tab ? fillImage : tab.rawValue)
-                        .scaleEffect(tab == selectedTab ? 1.25 : 1.0)
-                        .foregroundColor(tab == selectedTab ? tabColor : .gray)
+                    Text(tab.displayText)
                         .font(.system(size: 20))
+                        .foregroundColor(selectedTab == tab ? tab.tabColor : .gray)
+                        .scaleEffect(selectedTab == tab ? 1.25 : 1.0)
                         .onTapGesture {
                             withAnimation(.easeInOut(duration: 0.1)) {
                                 selectedTab = tab
@@ -48,16 +55,10 @@ struct CustomTabBar: View {
                     Spacer()
                 }
             }
-            .frame(width: nil, height: 60)
+            .frame(height: 60)
             .background(.thinMaterial)
             .cornerRadius(20)
             .padding()
         }
-    }
-}
-
-struct CustomTabBar_Previews: PreviewProvider {
-    static var previews: some View {
-        CustomTabBar(selectedTab: .constant(.book))
     }
 }

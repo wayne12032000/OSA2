@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CAE3CF92BAEEE080066CF0C /* LoginRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE3CF82BAEEE080066CF0C /* LoginRegisterView.swift */; };
+		0CC509512B84C7D80022D4C8 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC509502B84C7D80022D4C8 /* IntroView.swift */; };
 		0CD9EFB42AE2719600297540 /* OSA2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD9EFB32AE2719600297540 /* OSA2App.swift */; };
 		0CD9EFB62AE2719600297540 /* PreVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD9EFB52AE2719600297540 /* PreVideoView.swift */; };
 		0CD9EFB82AE2719700297540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CD9EFB72AE2719700297540 /* Assets.xcassets */; };
@@ -30,6 +32,11 @@
 		0CD9EFF82AE6F40600297540 /* LobbyTaskDtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD9EFF72AE6F40600297540 /* LobbyTaskDtView.swift */; };
 		0CD9EFFD2AE7EB8200297540 /* IconSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD9EFFC2AE7EB8200297540 /* IconSetView.swift */; };
 		0CD9EFFF2AE7EC6100297540 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD9EFFE2AE7EC6100297540 /* HistoryView.swift */; };
+		37FB76392CF05E1A0032247C /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FB76382CF05E1A0032247C /* WalkthroughView.swift */; };
+		37FB763B2CF063850032247C /* WalkthroughOnPersonAgainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FB763A2CF063850032247C /* WalkthroughOnPersonAgainView.swift */; };
+		37FB76762D0927A40032247C /* NewHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FB76752D0927A40032247C /* NewHistoryView.swift */; };
+		37FB76782D09323C0032247C /* DetailHistoryOfDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FB76772D09323C0032247C /* DetailHistoryOfDayView.swift */; };
+		37FB767A2D13E4B90032247C /* SettingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FB76792D13E4B90032247C /* SettingDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C40725E2B6A2E730003C30C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0CAE3CF82BAEEE080066CF0C /* LoginRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterView.swift; sourceTree = "<group>"; };
+		0CC509502B84C7D80022D4C8 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		0CD9EFB02AE2719600297540 /* OSA2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSA2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD9EFB32AE2719600297540 /* OSA2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSA2App.swift; sourceTree = "<group>"; };
 		0CD9EFB52AE2719600297540 /* PreVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreVideoView.swift; sourceTree = "<group>"; };
@@ -76,6 +86,11 @@
 		0CD9EFF72AE6F40600297540 /* LobbyTaskDtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyTaskDtView.swift; sourceTree = "<group>"; };
 		0CD9EFFC2AE7EB8200297540 /* IconSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSetView.swift; sourceTree = "<group>"; };
 		0CD9EFFE2AE7EC6100297540 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		37FB76382CF05E1A0032247C /* WalkthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughView.swift; sourceTree = "<group>"; };
+		37FB763A2CF063850032247C /* WalkthroughOnPersonAgainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughOnPersonAgainView.swift; sourceTree = "<group>"; };
+		37FB76752D0927A40032247C /* NewHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHistoryView.swift; sourceTree = "<group>"; };
+		37FB76772D09323C0032247C /* DetailHistoryOfDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHistoryOfDayView.swift; sourceTree = "<group>"; };
+		37FB76792D13E4B90032247C /* SettingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,13 +141,17 @@
 		0CD9EFB22AE2719600297540 /* OSA2 */ = {
 			isa = PBXGroup;
 			children = (
+				0C40725E2B6A2E730003C30C /* Info.plist */,
 				0CD9EFB32AE2719600297540 /* OSA2App.swift */,
+				0CAE3CF82BAEEE080066CF0C /* LoginRegisterView.swift */,
 				0CD9EFE72AE3B39A00297540 /* CustomTabBar.swift */,
 				0CD9EFE52AE3B34E00297540 /* ContentView.swift */,
 				0CD9EFF52AE6DD8400297540 /* CardView.swift */,
+				0CC509502B84C7D80022D4C8 /* IntroView.swift */,
+				37FB76382CF05E1A0032247C /* WalkthroughView.swift */,
+				37FB763A2CF063850032247C /* WalkthroughOnPersonAgainView.swift */,
 				0CD9EFFA2AE6F55100297540 /* PPerson */,
 				0CD9EFF92AE6F53900297540 /* LLobby */,
-				0CD9EFF32AE56A5C00297540 /* TaskDtView.swift */,
 				0CD9EFFB2AE7A5BB00297540 /* SSetting */,
 				0CD9EFE32AE27A6E00297540 /* SummaryView.swift */,
 				0CD9EFEF2AE3B7B000297540 /* AddTaskView.swift */,
@@ -184,6 +203,7 @@
 			children = (
 				0CD9EFE92AE3B5F600297540 /* PersonView.swift */,
 				0CD9EFF12AE3B96C00297540 /* TaskDetailView.swift */,
+				0CD9EFF32AE56A5C00297540 /* TaskDtView.swift */,
 				0CD9EFE12AE279EF00297540 /* VideoPlayerView.swift */,
 			);
 			path = PPerson;
@@ -193,8 +213,11 @@
 			isa = PBXGroup;
 			children = (
 				0CD9EFEB2AE3B60B00297540 /* SettingView.swift */,
+				37FB76792D13E4B90032247C /* SettingDetailView.swift */,
 				0CD9EFFC2AE7EB8200297540 /* IconSetView.swift */,
 				0CD9EFFE2AE7EC6100297540 /* HistoryView.swift */,
+				37FB76752D0927A40032247C /* NewHistoryView.swift */,
+				37FB76772D09323C0032247C /* DetailHistoryOfDayView.swift */,
 			);
 			path = SSetting;
 			sourceTree = "<group>";
@@ -331,22 +354,29 @@
 			files = (
 				0CD9EFF22AE3B96C00297540 /* TaskDetailView.swift in Sources */,
 				0CD9EFEA2AE3B5F600297540 /* PersonView.swift in Sources */,
+				37FB76782D09323C0032247C /* DetailHistoryOfDayView.swift in Sources */,
 				0CD9EFEC2AE3B60B00297540 /* SettingView.swift in Sources */,
 				0CD9EFB62AE2719600297540 /* PreVideoView.swift in Sources */,
 				0CD9EFFD2AE7EB8200297540 /* IconSetView.swift in Sources */,
 				0CD9EFF62AE6DD8400297540 /* CardView.swift in Sources */,
 				0CD9EFF02AE3B7B000297540 /* AddTaskView.swift in Sources */,
+				37FB76762D0927A40032247C /* NewHistoryView.swift in Sources */,
 				0CD9EFFF2AE7EC6100297540 /* HistoryView.swift in Sources */,
 				0CD9EFE02AE2797500297540 /* LobbyView.swift in Sources */,
 				0CD9EFE62AE3B34E00297540 /* ContentView.swift in Sources */,
+				37FB763B2CF063850032247C /* WalkthroughOnPersonAgainView.swift in Sources */,
 				0CD9EFB42AE2719600297540 /* OSA2App.swift in Sources */,
+				37FB76392CF05E1A0032247C /* WalkthroughView.swift in Sources */,
 				0CD9EFE82AE3B39A00297540 /* CustomTabBar.swift in Sources */,
 				0CD9EFF42AE56A5C00297540 /* TaskDtView.swift in Sources */,
+				0CC509512B84C7D80022D4C8 /* IntroView.swift in Sources */,
+				37FB767A2D13E4B90032247C /* SettingDetailView.swift in Sources */,
 				0CD9EFEE2AE3B71400297540 /* dataManager.swift in Sources */,
 				0CD9EFDE2AE271AB00297540 /* Userdata.swift in Sources */,
 				0CD9EFE22AE279EF00297540 /* VideoPlayerView.swift in Sources */,
 				0CD9EFF82AE6F40600297540 /* LobbyTaskDtView.swift in Sources */,
 				0CD9EFE42AE27A6E00297540 /* SummaryView.swift in Sources */,
+				0CAE3CF92BAEEE080066CF0C /* LoginRegisterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,24 +541,37 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.5.1;
 				DEVELOPMENT_ASSET_PATHS = "\"OSA2/Preview Content\"";
 				DEVELOPMENT_TEAM = DV489KNV4V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSA2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OSA;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth to connect to devices and retrieve sensor data.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app needs Bluetooth to connect to external devices for data collection.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is required to scan for nearby Bluetooth devices.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.5;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "B082040016-hw3.OSA2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -542,24 +585,37 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.5.1;
 				DEVELOPMENT_ASSET_PATHS = "\"OSA2/Preview Content\"";
 				DEVELOPMENT_TEAM = DV489KNV4V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSA2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OSA;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth to connect to devices and retrieve sensor data.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app needs Bluetooth to connect to external devices for data collection.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is required to scan for nearby Bluetooth devices.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.5;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "B082040016-hw3.OSA2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

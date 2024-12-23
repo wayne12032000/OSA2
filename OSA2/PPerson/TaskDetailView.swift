@@ -20,9 +20,9 @@ struct TaskDetailView: View {
                 // 现在，`index` 包含了任务的索引位置
                 //                print("任务 '\(taskIDToFind)' 在数组中的索引位置是 \(index)")
                 Text("\(dataManager.tasks[index].id)")
-                Text("completeness \(dataManager.tasks[index].Completeness)")
-                Text("c_iter \(dataManager.tasks[index].Current_iter)")
-                Text("c_index \(dataManager.tasks[index].current_mission_index)")
+                Text("完成度 \(dataManager.tasks[index].Completeness)")
+                Text("目前輪數\(dataManager.tasks[index].Current_iter)")
+                Text("目前項目\(dataManager.tasks[index].current_mission_index)")
             }
             
             
@@ -34,13 +34,14 @@ struct TaskDetailView: View {
             }
             
             NavigationLink(destination: PreVideoView(nowT: task)) {
-                Text("Start \(task.id)")
+                Text("開始 \(task.id)")
             }
             Button(action: {
                 dataManager.resetTask(tid:tid)
                 refreshID = UUID()
+//                dataManager.saveData()
             }) {
-                Text("Reset")
+                Text("重置")
             }
             Spacer()
             Spacer()
@@ -61,6 +62,9 @@ struct TaskDetailView: View {
             Spacer()
             Spacer()
             
+            VStack{
+                
+            }
         } .id(refreshID)
     }
 }

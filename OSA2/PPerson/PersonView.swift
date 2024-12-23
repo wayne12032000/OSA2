@@ -12,28 +12,51 @@ struct PersonView: View {
     var body: some View {
                 List{
                     
-                    ForEach(self.dataManager.tasks.reversed(), id: \.id) { task in
+                    ForEach(self.dataManager.tasks, id: \.id) { task in
                         ZStack{
                             VStack{
                                 ZStack{
-                                    Image("Dino6")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fill)
-                                        .frame(height: 80)
-                                        .clipped()
-                                    Image("Dino5")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(height: 80)
-                                        .offset(y:40)
-                                        .frame(maxWidth: .infinity,alignment:.leading)
-                                        .padding(.horizontal)
+                                    if let image = UIImage(named: task.imageuse) {
+                                            Image(uiImage: image)
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fill)
+                                                .frame(height: 80)
+                                                .clipped()
+                                            Image(uiImage: image)
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fit)
+                                                .frame(height: 80)
+                                                .offset(y:40)
+                                                .frame(maxWidth: .infinity,alignment:.leading)
+                                                .padding(.horizontal)
+                                        } else {
+                                            Image("伸展")
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fill)
+                                                .frame(height: 80)
+                                                .clipped()
+                                            Image("伸展")
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fit)
+                                                .frame(height: 80)
+                                                .offset(y:40)
+                                                .frame(maxWidth: .infinity,alignment:.leading)
+                                                .padding(.horizontal)
+                                        }
+                                        
+//                                    Image("Dino6")
+//                                        .resizable()
+//                                        .aspectRatio(contentMode: .fit)
+//                                        .frame(height: 80)
+//                                        .offset(y:40)
+//                                        .frame(maxWidth: .infinity,alignment:.leading)
+//                                        .padding(.horizontal)
                                 }
                                 VStack(spacing: 0.0){
                                     Button{
                                         
                                     }label: {
-                                        Text("Detail")
+                                        Text("查看內容")
                                             .padding(.vertical,4)
                                             .padding(.horizontal)
                                             .overlay{
@@ -50,21 +73,11 @@ struct PersonView: View {
                                     .frame(maxWidth: .infinity,alignment: .leading)
                                     .padding(.leading)
                                     
-                                    Text("10 minutes")
+                                    Text(dataManager.secondsToMinutesAndSeconds(seconds: task.totalTime))
                                         .frame(maxWidth: .infinity,alignment: .leading)
                                         .padding([.leading,.bottom])
                                 }
-//                                Button {
-//                                            if let index = dataManager.tasks.firstIndex(where: { $0.id == task.id }) {
-//                                                dataManager.tasks.remove(at: index)
-//                                            }
-//                                        } label: {
-//                                            Image(systemName: "xmark.circle.fill")
-//                                                .foregroundColor(.white)
-//                                                .padding(6)
-//                                                .frame( alignment: .trailing)
-//                                        }
-//                                        
+                                        
                             }
                             .background(Color(.tertiarySystemFill))
                             .cornerRadius(12)
@@ -82,7 +95,7 @@ struct PersonView: View {
                     }
                     .onDelete { indexSet in
                         dataManager.tasks.remove(atOffsets: indexSet)
-                        //                dataManager.saveData()
+                     
                     }
                     .onAppear{
                         dataManager.isbarshow = true
@@ -90,9 +103,51 @@ struct PersonView: View {
                 }.listRowSeparator(.hidden)
 
                 .listStyle(.plain)
-            .navigationBarTitle("我的任務")
-            .navigationBarItems(trailing: NavigationLink(destination: AddTaskView()) {
-                Image(systemName: "plus")
+            .navigationBarTitle("我的課程")
+            .navigationBarItems(trailing: HStack {
+                        // First Navigation Item
+                // Second Navigation Item
+                NavigationLink(destination: WalkthroughOnPersonAgainView(
+                    slides: [
+                       
+                        WalkthroughSlide(imageName: "s1", description: ""),
+                        WalkthroughSlide(imageName: "s2", description: ""),
+                        WalkthroughSlide(imageName: "s3", description: ""),
+                        
+                        WalkthroughSlide(imageName: "s4", description: ""),
+                        WalkthroughSlide(imageName: "s5", description: ""),
+                        WalkthroughSlide(imageName: "s6", description: ""),
+                        
+                        WalkthroughSlide(imageName: "s7", description: ""),
+                        WalkthroughSlide(imageName: "s8", description: ""),
+                        WalkthroughSlide(imageName: "s9", description: ""),
+                        
+                        WalkthroughSlide(imageName: "s10", description: ""),
+                        WalkthroughSlide(imageName: "s11", description: ""),
+                        WalkthroughSlide(imageName: "s12", description: ""),
+                        
+                        WalkthroughSlide(imageName: "s13", description: ""),
+                        WalkthroughSlide(imageName: "s14", description: ""),
+                        WalkthroughSlide(imageName: "s15", description: ""),
+                        
+                        WalkthroughSlide(imageName: "s16", description: ""),
+                        WalkthroughSlide(imageName: "s17", description: ""),
+                        WalkthroughSlide(imageName: "s18", description: ""),
+                        
+                        WalkthroughSlide(imageName: "s19", description: ""),
+                        WalkthroughSlide(imageName: "s20", description: "")
+                    ]
+                    
+                )) {
+//                            Image(systemName: "plus")
+                    Text("教學")
+                }
+                        
+                // Second Navigation Item
+                NavigationLink(destination: AddTaskView()) {
+//                            Image(systemName: "plus")
+                    Text("新增")
+                }
             })
         
         
